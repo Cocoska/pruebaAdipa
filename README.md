@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Themosis framework
 ==================
 
@@ -31,3 +32,6 @@ For details about contributing to the framework, please check the [contribution 
 License
 -------
 The Themosis framework is open-source software licensed under [GPL-2+ license](http://www.gnu.org/licenses/gpl-2.0.html).
+=======
+# pruebaAdipa
+>>>>>>> 25325d626c1cc439f1fddd77a62fd0f26f12a108
