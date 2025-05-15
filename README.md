@@ -35,3 +35,42 @@ The Themosis framework is open-source software licensed under [GPL-2+ license](h
 =======
 # pruebaAdipa
 >>>>>>> 25325d626c1cc439f1fddd77a62fd0f26f12a108
+## Descripción
+Este proyecto es una aplicación basada en Laravel que permite gestionar usuarios con roles específicos. Los usuarios pueden ser administradores o usuarios normales, y el acceso a las funcionalidades depende de su rol.
+
+## Iniciar el proyecto
+Para iniciar el proyecto, sigue estos pasos:
+
+1. Abre una terminal en la raíz del proyecto.
+2. Ejecuta el siguiente comando para iniciar el servidor:
+
+    php artisan serve --port 8082
+
+3. Abre la siguiente URL en tu navegador para acceder al sitio:
+
+    http://localhost:8082/login/
+
+## Funcionalidad del login
+
+* Nuevo RUT: .
+    Si se ingresa un RUT que no existe en la base de datos, el sistema redirige a la vista de creación de usuario.
+* RUT existente:
+    - Si el usuario no es administrador, podrá visualizar la información correspondiente al RUT ingresado y tendrá la opción de modificar únicamente su propia información.
+    - Si el usuario es administrador, podrá:
+        - Visualizar todos los usuarios.
+        - Modificar la información de cualquier usuario.
+        - Agregar nuevos usuarios.
+        - Eliminar usuarios.
+
+## Bases de datos utilizadas
+El proyecto utiliza dos bases de datos:
+
+1. wp_usuarios: 
+    Almacena la información de los usuarios, como nombre, apellido, RUT y fecha de nacimiento.
+2. wp_rol: 
+    Define el rol de cada usuario según su RUT. Si el campo administrador está en 1, el usuario tiene rol de administrador; de lo contrario, es un usuario normal.
+
+## Notas
+
+* Asegúrate de configurar correctamente las conexiones a las bases de datos en el archivo .env.
+* El sistema valida el RUT ingresado tanto en el cliente como en el servidor para garantizar que sea válido.
