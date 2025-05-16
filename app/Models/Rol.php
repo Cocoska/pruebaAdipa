@@ -11,7 +11,6 @@ class Rol extends Model
 
     protected $table = 'roles';
 
-    // Campos permitidos para asignación masiva
     protected $fillable = [
         'rut',
         'administrador',

@@ -11,7 +11,6 @@ class Usuario extends Model
 
     protected $table = 'usuarios';
 
-    // Campos permitidos para asignación masiva
     protected $fillable = [
         'nombre',
         'apellido',
